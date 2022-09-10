@@ -1,0 +1,387 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Staatliches&display=swap'); */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  /* background-color: rgb(44, 44, 44); */
+}
+
+.thiis {
+  background-color: aqua;
+}
+.textBody {
+  text-align: center;
+  padding: 4px;
+  gap: 1px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 20px;
+  color: white;
+  font-size: 30px;
+
+}
+
+.userName {
+  margin-top: 20px;
+  float: right;
+  background-color: rgb(168, 168, 68);
+  border-radius: 100px;
+  padding: 5px;
+}
+
+.acc{
+  font-size: large;
+  position: absolute;
+  left: 2%;
+  top: 5%;
+  color: white;
+}
+
+
+.tooltip {
+  position: relative;
+
+  margin-top: 20px;
+  float: left;
+  background-color: rgb(68, 68, 208);
+  border-radius: 100px;
+  padding: 5px;
+  transition: 200ms;
+}
+.tooltip:hover {
+
+  position: relative;
+
+  margin-top: 20px;
+  float: left;
+  background-color: rgb(0, 119, 255);
+  border-radius: 100px;
+  padding: 5px;
+}
+
+.tooltip .tooltiptext {
+  transition: 100ms;
+
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.712);
+  color: #fff;
+  text-align: center;
+  padding: 15px 5px;
+  border-radius: 6px;
+
+  width:max-content;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+ 
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+.UserToolTip {
+  position: relative;
+  
+  margin-top: 20px;
+  float: right;
+  background-color: rgb(168, 168, 68);
+  border-radius: 100px;
+  padding: 5px;
+  transition: 200ms;
+}
+.UserToolTip:hover {
+
+  position: relative;
+
+  margin-top: 20px;
+  float: right;
+  background-color: rgb(235, 235, 96);
+  border-radius: 100px;
+  padding: 5px;
+}
+
+/* Tooltip text */
+.UserToolTip .UserToolTipText {
+  transition: 100ms;
+
+  visibility: hidden;
+  /* width: 520px; */
+  background-color: rgba(0, 0, 0, 0.712);
+  color: #fff;
+  text-align: center;
+  padding: 15px 5px;
+  border-radius: 6px;
+
+  width:max-content;
+  bottom: 100%;
+  right: 10%;
+
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.UserToolTip:hover .UserToolTipText {
+  visibility: visible;
+}
+
+
+
+.loaderr{
+  margin-left: 35%;
+  margin-top: 15%;
+}
+
+
+
+.imgi {
+  position: fixed;
+  animation: color-change 1s infinite;
+  width: 60px;
+  margin: 20px;
+}
+
+@keyframes color-change {
+  
+  0% { filter: hue-rotate(0deg);}
+  100% { filter: hue-rotate(360deg);}
+}
+
+.buttonSend{
+  width:50px;
+  height:50px;
+  border-radius:100px;
+  background-image:url("https://cdn-icons-png.flaticon.com/512/2919/2919700.png");
+  background-size:35px 35px;
+  background-position-y:8px;
+  background-position-x:8px;
+  background-repeat:no-repeat;
+  border: 0px;
+}
+.identity {
+  background-color: inherit;
+  border: 0;
+  margin: auto;
+  width: 50%;
+  padding: 15px;
+  margin-top:-6%;
+  margin-left:5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: rgb(75, 72, 64);
+  font-size:220%;
+  font-weight:900;
+
+}
+.User{
+    display:flex;
+    position: absolute;
+    background-image: linear-gradient(#c6ffdd, #fbd786, #f7797d);
+    margin-top: 1%;
+    left: 3%;
+    width:60px;
+    height:60px;
+    border-radius:100%;
+    animation: color-change 1s infinite;
+    
+}
+
+.identity2 {
+  background-color: inherit;
+  border: 0;
+  margin: auto;
+    margin-top: auto;
+    margin-left: auto;
+  width: 50%;
+  padding: 15px;
+  margin-top: -22%;
+  margin-left: 1px;
+  -webkit-user-select: none;
+  user-select: none;
+  color: rgb(75, 72, 64);
+  font-size: 308%;
+  font-weight: 900;
+}
+
+.loginSignin{
+  /* font-size: 30px; */
+  color: white;
+  display:flex;
+  position: absolute;
+  margin-top: 2%;
+  left: 3%;
+  width:120px;
+  height:60px;
+  
+}
+
+.loginSignin button {
+  font-size: 20px;
+  background-color: inherit;
+  color: #c6ffdd;
+  border-radius: 100px;
+  height: 30px;
+  border-style:double;
+  border-color: #fbd786;
+}
+
+.loginSignin button:hover{
+  font-size: 20px;
+  background-color: inherit;
+  color: #00ff66;
+  border-radius: 100px;
+  height: 30px;
+  border-style:dashed;
+  border-color: #f7797d;
+}
+
+
+
+.quote{
+  background-color: white;
+  padding: 10px;
+  margin: 3px;
+}
+
+
+.quoteText{
+  /* text-align: center; */
+  margin-top: 20px;
+  /* border-radius: 20;
+  color: 'white';
+  font-size:30px; */
+}
+
+.uname{
+  display:inline-block;
+  font-size: 15px;
+  font-weight: bold;
+}
+.time{
+  display:inline-block;
+  font-size: 12px;
+  margin-left: 10px;
+  color: gray;
+}
+.address {
+  display:inline-block;
+  font-size: 12px;
+  margin-left: 10px;
+  color: gray;
+
+}
+
+
+
+
+.signinAndConnect{
+  float: right;
+}
+.signIn{
+  font-size: 110%;
+  margin: 15%;
+  margin-top: -10px;
+  border: none;
+  border-radius: 100px;
+  height: 50px;
+  width: 140px;
+  background-color: tomato;
+  color: white;
+  transition: 200ms;
+}
+.connect{
+  font-size: 110%;
+  margin: 15%;
+  margin-top: 10%;
+  margin-left: 12%;
+
+  border: none;
+  border-radius: 100px;
+  height: 50px;
+  width: 160px;
+
+  background-color: tomato;
+  color: white;
+  transition: 200ms;
+
+}
+.connect:hover {
+
+  background-color: rgb(0, 0, 0);
+  color: white;
+
+}
+.signIn:hover {
+
+background-color: rgb(0, 0, 0);
+color: white;
+}
+.Sinput{
+  margin-left: 20%;
+}
+
+.signInDiv input{
+  height: 30%;
+  border: 1px solid lightgreen;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.signInDiv button{
+  width: 50%;
+  height: 40%;
+  border: none;
+  border-radius: 50px;
+  font-size: 100%;
+  color: #fff;
+  background-color:tomato;
+  transition: 200ms;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+.signInDiv{
+  /* display: none; */
+  border-radius: 10px;
+  width: 211px;
+  height: 69px;
+  border: 5px solid black;
+  padding: 20px;
+  margin-top: -10px;
+  margin-right: 50%;
+  margin-bottom: 40px;
+
+
+
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.signInDiv button:hover{
+  border-radius: 50px;
+  font-size: 18px;
+  background-color: black;
+}
+.searchButton{
+  color: white;
+  background-color: tomato;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+}
+
+
+
+
+
+
+
+
+
