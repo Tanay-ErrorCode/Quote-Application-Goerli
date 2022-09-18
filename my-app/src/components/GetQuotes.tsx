@@ -4,7 +4,7 @@ import { Contract } from "@ethersproject/contracts"
 import React from "react";
 import {toast} from 'react-toastify';
 
-export const GetC = () => { 
+export const GetQuotes = () => { 
     
   const generate = (time:string, quote:string, user:string, address:string) => {
     var _body = document.createElement("div")

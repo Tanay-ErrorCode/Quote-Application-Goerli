@@ -1,5 +1,5 @@
 import {MainBody} from "../components/MainBody"
-import { GetC} from '../components/GetC';
+import { GetQuotes} from './GetQuotes';
 import {NotificationsPannel} from "../components/NotificationsPannel"
 import {SigninAndConnect} from '../components/SigninAndConnect'
 import { makeStyles } from "@material-ui/core";
@@ -74,7 +74,7 @@ export const Main = () => {
         <NotificationsPannel/>
         <SigninAndConnect/>
         <MainBody/>
-        <GetC/>
+        <GetQuotes/>
         </div>
         </div>
 
