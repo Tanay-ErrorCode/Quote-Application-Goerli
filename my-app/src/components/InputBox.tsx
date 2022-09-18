@@ -27,6 +27,7 @@ const newStyles = makeStyles({
         height: '110%',
         width: '5%',
         transition: "200ms",
+        marginLeft:'10px',
         "&:hover": {
           color: "white", 
           backgroundColor: "black", 

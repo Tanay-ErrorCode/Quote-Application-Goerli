@@ -1,7 +1,7 @@
 import { utils, providers } from "ethers"
 import QuoteAbi from "../chain-info/contracts/Quote.json"
 import { Contract } from "@ethersproject/contracts"
-import React from "react";
+import React, { useEffect } from "react";
 import {toast} from 'react-toastify';
 
 export const GetQuotes = () => { 
@@ -43,7 +43,7 @@ export const GetQuotes = () => {
     _body.appendChild(_quote)
 
     
-    }    
+    }
     const { abi } = QuoteAbi
     const provider = new providers.WebSocketProvider('wss://kovan.infura.io/ws/v3/6e70cf0251aa43b5958ff45eb0568fc6');
     
@@ -51,10 +51,18 @@ export const GetQuotes = () => {
     const quoteInterface = new utils.Interface(abi)
     const quoteContract = new Contract(quoteAddress, quoteInterface, provider) 
 
-    quoteContract.on('quoteUploadedByUser', (_time, _quote, _user, _address, event) => {
-      generate(_time, _quote, _user, _address)
-      toast('New Quote by ' + _user)
-    });
+    const mainFunction = () => {
+      quoteContract.on('quoteUploadedByUser', (_time, _quote, _user, _address, event) => {
+        console.log(event)
+        toast('New Quote by ' + _user)
+  
+        // useEffect(()=>{
+          generate(_time, _quote, _user, _address)
+        // }, [])
+  
+      });
+    }
+    useEffect(()=>{mainFunction()}, [])
     return (
         <div>
         </div>

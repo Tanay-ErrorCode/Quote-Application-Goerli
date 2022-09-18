@@ -33,7 +33,8 @@ const QuoteStyle = makeStyles({
           height: "30%", 
           border: "1px solid lightgreen", 
           borderRadius: "10px", 
-          fontSize: "14px"
+          fontSize: "14px",
+          width:'100%'
         },
         signInDiv_button: {
           width: "50%", 
@@ -54,7 +55,7 @@ const QuoteStyle = makeStyles({
           border: "5px solid black", 
           padding: "20px", 
           marginTop: "-10px", 
-          marginRight: "50%", 
+          marginRight: "20px", 
           marginBottom: "40px", 
           visibility: "hidden", 
           opacity: "0", 

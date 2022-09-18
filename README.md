@@ -42,9 +42,9 @@ By using **MetaMask** and some **kovan chain faucets**, one can **interact** wit
 - Application usage
     - Once the app is opened in the web browser, **Connect** the wallet by clicking connect button.
     - After connecting, Click **SignIn** button. Fill your username in the input feild and press proceed.
-    - Click on the **confirm** button in the metamask that has been poped up.
+    - Click on the **confirm** button in the metamask that has been popped up.
     - After SignIn you can **post** any quote on the website.
-    - Get a quote and type it in the input feild on the bottom.
+    - Get a quote and type it in the input field on the bottom.
     - Then click the **send** button. After a few seconds the quote will be posted.
 
 
@@ -57,4 +57,3 @@ By using **MetaMask** and some **kovan chain faucets**, one can **interact** wit
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/MY_YOUTUBE-000?style=for-the-badge&logo=youtube&logoColor=red)](https://www.youtube.com/channel/UCN7Lo2yjOFomJLDpAxxcSMw)
 [![StackOverfow](https://img.shields.io/badge/Stack_Overflow-fff?style=for-the-badge&logo=stackoverflow&logoColor=orange)](https://stackoverflow.com/users/17675859/tanay)
-

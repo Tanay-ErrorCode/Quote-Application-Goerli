@@ -7,7 +7,6 @@ contract Quote{
     event quoteUploaded(string newQuote);
     event quoteUploadedByUser(string _time, string _quote, string _user, address _userAddress);
 
-    // mapping(address => string) public users;
 
     struct userQuoteTime {
         mapping(address => string) u;
