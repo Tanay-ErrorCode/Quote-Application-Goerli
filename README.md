@@ -1,15 +1,29 @@
 
 # Quote application with blockchain
 
-*A Major project for blockchain developers.*
+*A project for blockchain beginners.*
 
-This application is built with **Python, Solidity and React Typescript**.
-One can post a quote on this application by using metamask wallet and some faucets.
+This **Quote Application** is built with **solidity, python and react typescript**.
+By using this application one can *upload a quote*, which will be visible to all the users.
 
-Here is a full procedure to post a quote on this application:
+The **smart contract** which is built with **solidity** has capabilities of **adding a new user**, **uploading a quote** and **catching new quotes uploaded at that time**.
 
+The python script `deploy_app.py` is the main script to deploy a new contract to a network like `kovan`, `rinkeby`, etc.
+To run this script you will need [brownie](https://eth-brownie.readthedocs.io/en/stable/) python pakage installed.
+
+The **Web UI** is built with **React Typescript**. One should have [NodeJs](https://nodejs.org/en/) and [npm](https://www.npmjs.com/package/npm) installed to run this application.
+
+By using **MetaMask** and some **kovan chain faucets**, one can **interact** with the smart contract.
+
+- [@useDApp/core](https://www.npmjs.com/package/@usedapp/core) is used here to **call the functions** of the **smart contract** deployed on the live chain.
+
+- [@material-ui/core](https://www.npmjs.com/package/@material-ui/core) is used here to **style** the **Web UI** within the **typescript** file.
+
+- [react-toastify](https://www.npmjs.com/package/react-toastify) npm package is used here to **show notifications** in the **Web UI**.
+
+**Here's the guide to run this application :**
 - Setup
-    - Download MetaMask.
+    - Add **MetaMask** extension for your **web browser**.
     - **Create** a new wallet or **import** one.
     - Click on **Ethereum mainnet** next to the icon.
     - Click **Show/Hide** Test networks.
@@ -20,16 +34,20 @@ Here is a full procedure to post a quote on this application:
     - **Uncheck** the `20 test LINK` because the application works only on `ETH`.
     - **Verify** that you are a human.
     - Click **Send Request** button.
+    - Install [**NodeJs**](https://nodejs.org/en/) and [**npm**](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
-
+- Running application
+    - Execute the command `npm install --force`
+    - Now execute the command `npm start`
 - Application usage
-    - Now open terminal in **React project's directory** and then type and execute `npm start` command.
     - Once the app is opened in the web browser, **Connect** the wallet by clicking connect button.
     - After connecting, Click **SignIn** button. Fill your username in the input feild and press proceed.
     - Click on the **confirm** button in the metamask that has been poped up.
     - After SignIn you can **post** any quote on the website.
     - Get a quote and type it in the input feild on the bottom.
     - Then click the **send** button. After a few seconds the quote will be posted.
+
+
 
 ## Authors
 

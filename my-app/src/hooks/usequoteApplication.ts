@@ -1,37 +1,29 @@
-// import { useEffect, useState } from "react"
-import { useEthers, useContractFunction, useCall } from "@usedapp/core"
-import { constants, utils } from "ethers"
-import TokenFarm from "../chain-info/contracts/Quote.json"
-// import ERC20 from "../chain-info/contracts/MockERC20.json"
+import { useContractFunction } from "@usedapp/core"
+import { utils } from "ethers"
+import QuoteAbi from "../chain-info/contracts/Quote.json"
 import { Contract } from "@ethersproject/contracts"
-import {Signer} from "@ethersproject/abstract-signer";
-import networkMapping from "../chain-info/deployments/map.json"
 
-export const UsequoteApplication = () => {
-    // address
-    // abi
-    // chainId
+export const UsequoteApplication = () => { 
 
 
-    const { abi } = TokenFarm
-    const tokenFarmAddress = "0x03750C482CDFc3FD26E4864D3C9BC73066767625"
-    const tokenFarmInterface = new utils.Interface(abi)
-    const tokenFarmContract = new Contract(tokenFarmAddress, tokenFarmInterface) // add signer
+    const { abi } = QuoteAbi
+    const quoteAddress = "0x5FAa58Bc1c6a10F88d3Cc584755E2cfE9cc1a9DB"
+    const quoteInterface = new utils.Interface(abi)
+    const quoteContract = new Contract(quoteAddress, quoteInterface) 
 
     
 
-    const { send: approveErc20Send2, state: approveAndStakeErc20State2 } =
-    useContractFunction(tokenFarmContract, "setQuoteLatest", {
-        transactionName: "Approve ERC20 transfer",
+    const { send: send_quote, state: send_quote_state } =
+    useContractFunction(quoteContract, "setQuoteLatest", {
+        transactionName: "Send Quote",
     })
 
 
     const setQuoteByUser = (_time:string, _quote:string) => {
-      // setAmountToStake(amount)
       
-      return approveErc20Send2(_time, _quote)
+      return send_quote(_time, _quote)
       
   }
 
-    return {setQuoteByUser, approveAndStakeErc20State2}
+    return {setQuoteByUser, send_quote_state}
 }

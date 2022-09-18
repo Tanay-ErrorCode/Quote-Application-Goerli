@@ -1,36 +1,16 @@
-import {DAppProvider, ChainId} from "@usedapp/core"
-import {Header} from "./components/Header"
-import {MainBody} from "./components/MainBody"
-import {Container} from "@material-ui/core"
-import {InputBox} from "./components/InputBox"
-import { GetC} from './components/GetC';
-// import { SigninF } from "./components/SigninF";
-import {NotificationsPannel} from "./components/NotificationsPannel"
-import {SigninAndConnect} from './components/SigninAndConnect'
+import {DAppProvider, Kovan} from "@usedapp/core"
+import { Main } from "./components/Main";
 
 
 function App() {
-
   return (
     <DAppProvider config={{
-      supportedChains: [ChainId.Kovan]
+      readOnlyChainId: Kovan.chainId,
+      readOnlyUrls: {
+        [Kovan.chainId]: 'https://kovan.infura.io/v3/6e70cf0251aa43b5958ff45eb0568fc6',
+      },
     }}>
-      {/* <Header/> */}
-      <img src="https://play-lh.googleusercontent.com/ExQlFFVME7XRKUX8WghGYNF-zS4uJVL8HO_WIx8xsbSXEgMW08dhwDwPm_UKg3pOXVc" className="imgi" alt="" />
-      <NotificationsPannel/>
-      <SigninAndConnect/>
-
-      {/* <Container maxWidth='xl'> */}
-        
-        <MainBody/>
-        
-        {/* <InputBox></InputBox> */}
-
-        <GetC/>
-        
-
-      {/* </Container> */}
-
+      <Main/>
     </DAppProvider>
   );
 }

@@ -1,39 +1,28 @@
-// import { useEffect, useState } from "react"
-import { useEthers, useContractFunction, useCall } from "@usedapp/core"
-import { constants, utils } from "ethers"
-import TokenFarm from "../chain-info/contracts/Quote.json"
-// import ERC20 from "../chain-info/contracts/MockERC20.json"
+import { useContractFunction } from "@usedapp/core"
+import { utils } from "ethers"
+import QuoteAbi from "../chain-info/contracts/Quote.json"
 import { Contract } from "@ethersproject/contracts"
-import {Signer} from "@ethersproject/abstract-signer";
-import networkMapping from "../chain-info/deployments/map.json"
 import { toast } from "react-toastify";
-import { useState } from "react";
 
 export const UseUsers = () => {
-    // address
-    // abi
-    // chainId
 
-    // const { chainId } = useEthers() //  why error generates here?????
-
-    const { abi } = TokenFarm
-    const tokenFarmAddress = "0x03750C482CDFc3FD26E4864D3C9BC73066767625"
-    const tokenFarmInterface = new utils.Interface(abi)
-    const tokenFarmContract = new Contract(tokenFarmAddress, tokenFarmInterface) // add signer
+    const { abi } = QuoteAbi
+    const quoteAddress = "0x5FAa58Bc1c6a10F88d3Cc584755E2cfE9cc1a9DB"
+    const quoteInterface = new utils.Interface(abi)
+    const quoteContract = new Contract(quoteAddress, quoteInterface)
 
 
-    const { send: approveErc20Send, state: approveAndStakeErc20State } =
-    useContractFunction(tokenFarmContract, "addNewUser", {
+    const { send: sign_in, state: sign_in_state } =
+    useContractFunction(quoteContract, "addNewUser", {
         transactionName: "SignIn for Quote",
     })
 
-    const approveAndStake = (address: string, Uname:string) => {
-        // setAmountToStake(amount)
+    const sign_in_for_quote = (address: string, Uname:string) => {
         
         toast('Request Sent...')
-        return approveErc20Send(address, Uname)
+        return sign_in(address, Uname)
                 
     }
 
-    return { approveAndStake, approveAndStakeErc20State}
+    return {sign_in_for_quote, sign_in_state}
 }
