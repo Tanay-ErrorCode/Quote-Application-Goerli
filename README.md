@@ -1,5 +1,5 @@
 
-# Quote application with blockchain
+# Quote application with blockchain (Goerli)
 
 *A project for blockchain beginners.*
 
