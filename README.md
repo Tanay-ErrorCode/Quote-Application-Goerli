@@ -36,6 +36,7 @@ By using **MetaMask** and some **Goerli chain faucets**, one can **interact** wi
     - Install [**NodeJs**](https://nodejs.org/en/) and [**npm**](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
 - Running application
+    - Clone this repository and open terminal in there.
     - Execute the command `npm install --force`
     - Now execute the command `npm start`
 - Application usage
