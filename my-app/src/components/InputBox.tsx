@@ -59,7 +59,7 @@ export const InputBox = () => {
     }
 
     useEffect(() => {
-        if (state.status === "Exception"  && state.errorMessage==="The execution failed due to an exception.") {
+        if (state.status === "Exception"  && state.errorMessage==="execution reverted: You need To SignIn") {
             toast.error('You need to SignIn !')
         }
 

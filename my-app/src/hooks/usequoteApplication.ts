@@ -7,7 +7,7 @@ export const UsequoteApplication = () => {
 
 
     const { abi } = QuoteAbi
-    const quoteAddress = "0x5FAa58Bc1c6a10F88d3Cc584755E2cfE9cc1a9DB"
+    const quoteAddress = "0xf985B005B82e642300Ebe808476F8282d438f823"
     const quoteInterface = new utils.Interface(abi)
     const quoteContract = new Contract(quoteAddress, quoteInterface) 
 

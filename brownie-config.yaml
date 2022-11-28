@@ -1,6 +1,7 @@
 networks:
-  kovan:
+  goerli:
     verify: True
+    
 dotenv: .env
 wallets:
   from_key: ${PRIVATE_KEY}

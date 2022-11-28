@@ -45,9 +45,9 @@ export const GetQuotes = () => {
     
     }
     const { abi } = QuoteAbi
-    const provider = new providers.WebSocketProvider('wss://kovan.infura.io/ws/v3/6e70cf0251aa43b5958ff45eb0568fc6');
+    const provider = new providers.WebSocketProvider('wss://goerli.infura.io/ws/v3/6e70cf0251aa43b5958ff45eb0568fc6');
     
-    const quoteAddress = "0x5FAa58Bc1c6a10F88d3Cc584755E2cfE9cc1a9DB"
+    const quoteAddress = "0xf985B005B82e642300Ebe808476F8282d438f823"
     const quoteInterface = new utils.Interface(abi)
     const quoteContract = new Contract(quoteAddress, quoteInterface, provider) 
 
