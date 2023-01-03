@@ -58,23 +58,5 @@ By using **MetaMask** and some **Goerli chain faucets**, one can **interact** wi
 ## 🔗 Links
 [![Youtube](https://img.shields.io/badge/MY_YOUTUBE-000?style=for-the-badge&logo=youtube&logoColor=red)](https://www.youtube.com/channel/UCN7Lo2yjOFomJLDpAxxcSMw)
 [![StackOverfow](https://img.shields.io/badge/Stack_Overflow-fff?style=for-the-badge&logo=stackoverflow&logoColor=orange)](https://stackoverflow.com/users/17675859/tanay)
-
-
-<!-- ceheco9805@evilant.com -->
-
-<!-- Kutta_Kala_Hai1 -->
-
-<!-- git remote add origin https://github.com/Evil-Deer/my-Repo.git
-git branch -M main
-git push -u origin main -->
-<!-- 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 -->
-<!-- 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 -->
-
-<!-- git init -b main
-git add .
-git commit -m 'first commit'
-git remote -v
-git remote add origin https://Evil-Deer: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@github.com/Evil-Deer/my-Repo.git
-git remote set-url origin https://Evil-Deer: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@github.com/Evil-Deer/my-Repo.git
-git push --set-upstream origin main
- -->
+<br>
+### The video tutorial is now avilable [here](https://www.youtube.com/watch?v=bwEZSGMWG8Y).
