@@ -15,9 +15,11 @@ const QuoteStyle = makeStyles({
       margin: "20px"
     },
     connect: {
+        position: "absolute",
+        left: "50%",
+        top:"70%",
+        transform: "translate(-50%, -50%)",
         fontSize: "110%", 
-        marginTop: "30%", 
-        marginLeft: "45%", 
         border: "none", 
         borderRadius: "100px", 
         height: "50px", 
@@ -32,9 +34,12 @@ const QuoteStyle = makeStyles({
     },
     metaMaskLogo:{
         position: "absolute",
-        marginLeft: "20%",
-        marginTop: "12%"
-        
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+        maxWidth: "100%",
+        minWidth: "290px",
+                
     }
 })
 export const Main = () => {
