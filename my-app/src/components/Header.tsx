@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 import { utils, providers } from "ethers"
 import QuoteAbi from "../chain-info/contracts/Quote.json"
 import { Contract } from "@ethersproject/contracts"
-import { toast } from "react-toastify";
+import { Flip, toast } from "react-toastify";
 
 
 
@@ -138,7 +138,7 @@ export const Header = () => {
     
       const fetchFunction = () => {
         if (account !== undefined){
-            toast.info('Fetching content...' )
+            toast.info('Fetching content...' , {transition: Flip})
             SignIn()
         }
       }
