@@ -27,7 +27,7 @@ const QuoteStyle = makeStyles({
         backgroundColor: "tomato", 
         color: "white", 
         transition: "200ms",
-        "&:hover": { 
+        "&:hover": {
           backgroundColor: "rgb(0, 0, 0)", 
           color: "white"
         },
